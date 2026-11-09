@@ -8,13 +8,10 @@ entity "usuario" as usuario {
     *password: VARCHAR(100)
 }
 
-entity "tip" as tip {
-    *id_tip : VARCHAR(50) <<PK>>
+entity "curso" as curso {
+    *id_curso : VARCHAR(50) <<PK>>
     --
     *id_usuario : INT <<FK>>
-    *nombre : VARCHAR(100)
-    *fecha_publicacion : DATE
-    *descripcion : TEXT
 }
 
 usuario ||--o{ tip : "ocupa / guarda (1-N)"

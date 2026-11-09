@@ -138,10 +138,7 @@
                           while(rs.next()){//inicia while
                         %>  
                         <tr>
-                            <td><%=rs.getString("id_tip")%></td>
-                            <td><%=rs.getString("nombre")%></td>
-                            <td><%=rs.getString("fecha_publicacion")%></td>
-                            <td><%=rs.getString("descripcion")%></td>
+                            <td><%=rs.getString("id_curso")%></td>
                             
                         </tr>
                         <%
