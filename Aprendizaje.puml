@@ -5,7 +5,7 @@ entity "usuario" as usuario {
     *id_usuario : INT <<PK>>
     --
     *nombre: VARCHAR(100)
-    *email: VARCHAR(100)
+    *password: VARCHAR(100)
 }
 
 entity "tip" as tip {
@@ -17,7 +17,6 @@ entity "tip" as tip {
     *descripcion : TEXT
 }
 
-' Relación: Un usuario puede tener/guardar muchos tips (1-N)
 usuario ||--o{ tip : "ocupa / guarda (1-N)"
 
 @enduml
